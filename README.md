@@ -15,11 +15,12 @@
     <a href="https://www.ipb.uni-bonn.de/people/cyrill-stachniss/"><strong>Cyrill Stachniss</strong></a>
   </p>
   <p align="center"><a href="https://www.ipb.uni-bonn.de"><strong>University of Bonn</strong></a>
-  <h3 align="center"><a href="https://www.ipb.uni-bonn.de/wp-content/papercite-data/pdf/kuang2025icra.pdf">Paper</a></h3>
 </p>
 
 ![enm_mcl_teaser](https://github.com/user-attachments/assets/50ae6a06-a55b-4013-9c3c-100e05da92a1)
+
 *Accuarate and efficient indoor global localization with ENM-MCL in the Lab of Uni.Bonn.*
+
 ---
 
 ## Abstract
@@ -112,7 +113,8 @@ Please refer to [PREPARE_DATA](PREPARE_DATA.md) to prepare the datasets
   ```
 
 ## Citation
-If you use this code, please cite:
+If you use this library for any academic work, please cite our original [paper](https://www.ipb.uni-bonn.de/wp-content/papercite-data/pdf/kuang2025icra.pdf).
+
 ```bibtex
 @inproceedings{kuang2025icra,
   author = {H. Kuang and Y. Pan and X. Zhong and L. Wiesmann and J. Behley and Stachniss, C.},
