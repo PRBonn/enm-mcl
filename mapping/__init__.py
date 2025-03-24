@@ -1,0 +1,2 @@
+from .map import MapRepresentation
+

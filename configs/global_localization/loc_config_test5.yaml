@@ -1,0 +1,50 @@
+# Configuration for ENM-MCL
+
+# Inputs
+# occupancy grid map file
+map_file: 'data/ipblab/occmap.npy'
+map_res: 0.05
+# poses used to build the map
+map_pose_file: 'data/ipblab/loc_test/test5/seq_5.json'
+# ground truth poses file
+data_file: 'data/ipblab/loc_test/test5/seq_5.json'
+# downsample beams:
+max_beams: 128
+# Transformation from LiDAR to Robot
+T_b2l: 'data/ipblab/loc_test/b2l.txt'
+
+
+# the size of map: [min_x, max_x, min_y, max_y]
+map_size: [-15, 17.5, -12.5, 5]
+
+# Evaluation
+gt_file: 'data/ipblab/loc_test/test5/seq_5_gt_pose.txt'
+
+# Output
+# path to save localization results
+result_path: 'results/ipblab/loc_test/test5/loc_results.npz'
+# plot the final localization results
+plot_loc_results: false
+
+# Sensor model
+map_config: 'configs/mapping_enm.yaml'
+obs_area: 1 # 270 / 10 = 27
+lambda_avg: 20.0
+lambda_adaptive: 20.0
+
+# MCL parameters
+# pose tracking or global localization
+pose_tracking: false
+init_noise: [0.25, 0.25, 0.0685]
+# start frame index
+start_idx: 0
+# resolution of grid still in use for initialization
+grid_res: 1
+# number of particles
+numParticles: 80000
+# after convergence, we reduce the number of particles
+# and using only num_reduced particles.
+num_reduced: 1000
+# visualize the localization results online
+visualize: false
+

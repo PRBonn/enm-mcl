@@ -1,0 +1,33 @@
+# data
+root_dir: 'data/ipblab/mapping'
+split: 'train'
+step: 50
+
+# model
+map_type: "ENM"
+map_size: [-25, 25, -25, 25]
+grid_res: 0.1
+level_num: 1
+up_scale_ratio: 1.5
+feature_dim: 4
+hidden_dim: 4
+with_bias: True
+use_dir: True
+pe_freq: 4
+
+
+# mapping
+learning_rate: 0.001
+iterations: 5000
+batch_size: 2048
+
+truncated_area: 0.25
+truncated_samples_num: 6
+occupied_area: 0.1
+occupied_sampled_num: 4
+free_space_sampled_num: 5
+
+threshold_free: 0.35
+threshold_unknown: 1.0
+
+results_path: 'results/enm_map.pth'
